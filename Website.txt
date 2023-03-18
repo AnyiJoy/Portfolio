@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Anyi Joy</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<img src="profile-picture.jpg" alt="Anyi Joy's profile picture">
+			<p>Hi, I'm Anyi Joy! I am new to tech it has been an interesting journey filled with challenges. I a have Knowledge of python, html5, css, docker, kubernetes, linux, ansible, terraform and git. </p>
+			<p>My interests include:</p>
+			<ul>
+				<li>Programming</li>
+				<li>Reading</li>
+				<li>Space and the universe</li>
+			</ul>
+		</section>
+
+		<section id="portfolio">
+			<h2>Portfolio</h2>
+			<ul>
+				<li>
+					<h3>Project 1</h3>
+					<p>Deployed a laravel application with ansible using apache on ubuntu.</p>
+				</li>
+				<li>
+					<h3>Project 2</h3>
+					<p>Created an instance to display the host name of each instance in a private network.</p>
+				</li>
+                <li>
+                    <h4>Project 3</h4>
+                    <p>Created an instance, vpc, internet gateway, routes tables, subnets and load balancer using terraform.</p>
+                </li>
+                <li>
+                    <h5>Project 4</h5>
+                    <p>Deployed a laravel application using docker</p>
+                </li>
+			</ul>
+		</section>
+
+		<section id="blog">
+			<h2>Blog</h2>
+			<ul>
+				<li>
+					<h3>My Thoughts on Programming</h3>
+					<p>Programming is vast, and it the most important skill as the world grows so people need to have a tech skill, everything is going digital.</p>
+				</li>
+				<li>
+					<h3>My Favorite thing about space</h3>
+					<p>I am always amazed with the universe, the stars and the solar system. it is beautiful and amazing, God did an amazing job creating it.</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Anyi Joy</p>
+	</footer>
+</body>
+</html>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #710909;
+	color: #fff;
+	padding: 1px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin-top: 80px; 
+}
+
+section {
+	margin: 50px auto;
+	max-width: 800px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+section ul {
+	margin-top: 0;
+}
+
+section li {
+	margin: 10px 0;
+}
+
+section h3 {
+	margin-top: 0;
+}
+
+form {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"], textarea {
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="submit"] {
+	background-color: blue;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+
+
