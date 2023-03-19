@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-deploy
+  labels: 
+    name: web-app
+    app: website
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      name: web-app-pod
+      app: website
+  template:
+    metadata:
+      name: web-app-pod
+      labels: 
+        name: web-app-pod
+        app: website
+    spec:
+      containers:
+        - name: web-app
+          image: anyijoy/web-app
+          ports:
+            - containerPort: 80
